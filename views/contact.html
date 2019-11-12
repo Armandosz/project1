@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <!--Estilos del header-->
+    <%  include partials/head.html %>
+</head>
+  <body>
+      <% include partials/navigation.html %>
+
+      <div class="container p-5 m-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-4">
+                <div class="card animated flipInY">
+                  <form action='http://localhost:3000/subir' method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <input type="submit" value="subir">
+                  </form>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
