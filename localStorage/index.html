@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+    
+<!-- jQuery CDN -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container mt-5">
+
+    <h3>
+      <i class="material-icons">
+        accessibility
+      </i>
+      Estetica
+    </h3>
+
+    <form id="formulario">
+        <div class="row">
+            <div class="col-sm-3 my-1">
+              <input required="required" type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="col-sm-4 my-1">
+                <input class="countries" required="required" type="text" class="form-control" id="actividad" placeholder="Actividad">    
+            </div>
+            <div class="col-auto my-1">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                    <input required="required" type="number" class="form-control" id="costo" placeholder="Costo">
+                </div>
+            </div>
+          <div class="col-auto my-1">
+             <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+    </form>
+      
+      
+      
+     
+
+<!--
+    <div id="listaActividades" class="mt-4">
+      <div class="alert alert-danger" role="alert">
+        <i class="material-icons float-left mr-2">
+          accessibility
+        </i>
+        <b>Texto de la Actividad</b> - Estado
+        <span class="float-right">
+          <i class="material-icons">
+            done
+          </i>
+          <i class="material-icons">
+            delete
+          </i>
+        </span>
+      </div>
+    </div>
+      -->
+      
+      <div class="table-responsive">
+      <table class="table table-dark table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Trabajdor/a</th>
+          <th scope="col">Actividad</th>
+          <th scope="col">Costo</th>
+          <th scope="col">Opciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaprueba">
+       <!-- <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>300</td>
+        </tr>-->
+      </tbody>
+    </table>
+  </div>
+
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
