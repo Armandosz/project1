@@ -97,7 +97,7 @@ formularioUI.addEventListener('submit', (e) => {
   let actividadUI = document.querySelector('#actividad').value;
   let costoUI = document.querySelector('#costo').value;
     
- //console.log(nombreUI+' + ' + actividadUI + ' + ' + costoUI );
+ console.log(nombreUI+' + ' + actividadUI + ' + ' + costoUI );
 
   CrearItem(nombreUI, actividadUI, costoUI); //agrega un item a la funcion
   GuardarDB();
@@ -139,35 +139,34 @@ listaActividadesUI.addEventListener('click', (e) => {
 
 });
 
-var pais = document.querySelector("p.countries");
 
-/*
-var options = {
-  url: "countries.json",
-  getValue: "name",
-  list: {
-    match: {
-      enabled: true
-    }
-  },
-  theme: "square"
-};
-*/
 
-let countries = [
-    {"name": "Afghanistan", "code": "AF"},
-    {"name": "Albania", "code": "AL"},
-    {"name": "Algeria", "code": "DZ"},
-]
-var options = {
-    data: countries,
 
-    getValue: "name",
 
-    list: {
-        match: {
-            enabled: true
+/* 1st attempt
+      const countries = [
+        {name: 'USA'},
+        {name: 'India'},
+        {name: 'Argentina'},
+        {name: 'Armenia'}
+      ];
+
+      const searchInput = document.querySelector('.search-input');
+      const suggestionsPanel = document.querySelector('.suggestions');
+
+      searchInput.addEventListener('keyup', function() {
+        const input = searchInput.value;
+        suggestionsPanel.innerHTML = '';
+        const suggestions = countries.filter(function(country) {
+          return country.name.toLowerCase().startsWith(input);
+        });
+        suggestions.forEach(function(suggested) {
+          const div = document.createElement('div');
+          div.innerHTML = suggested.name;
+          suggestionsPanel.appendChild(div);
+        });
+        if (input === '') {
+          suggestionsPanel.innerHTML = '';  
         }
-    }
-};
-$("#basics").easyAutocomplete(options);
+      })
+*/
