@@ -19,38 +19,48 @@
 </head>
 
 <body>
-  <div class="container mt-5">
+  <div class="container mt-5 border border-primary rounded">
 
     <h3>
-      <i class="material-icons">
+      <!-- <i class="material-icons">
         accessibility
-      </i>
+      </i> -->
+        <img src="https://img.icons8.com/nolan/64/barbershop.png">
       Estetica
     </h3>
 
     <form id="formulario">
+
+        <!-- Fila para los inputs -->
         <div class="row">
-            <div class="col-sm-3 my-1">
-              <input required="required" type="text" class="form-control" id="nombre" placeholder="Nombre">
+            <div class="col-sm-3 my-1 form-group">
+              <!--   <input required="required" type="text" class="form-control" id="nombre" placeholder="Nombre"> -->
+                <label for="nombre" class="font-weight-bold">Trabajador/a:</label> 
+                <select required="required" class="form-control custom-select" id="nombre">
+                  <option class="desactivado" selected disabled value="">Nombre...</option>
+                  <option value="eva">Eva</option>
+                  <option value="ady">Ady</option>
+                  <option value="nora">Nora</option>
+                  <option value="yessica">Yessica</option>
+                </select>
             </div>
-            <div class="col-sm-4 my-1">
+            <div class="col-sm-4 my-1 form-group">
+                 <label for="actividad" class="font-weight-bold">Acividad</label>  
                 <select required="required" class="form-control custom-select" id="actividad">
-                  <option selected>Actividad</option>
+                  <option class="desactivado" selected disabled value="">Actividad...</option>
                   <option value="corte">Corte</option>
                   <option value="2">tintes</option>
                   <option value="3">usasa</option>
                 </select>
             </div>
-
-               <!-- <input required="required" type="text" class="form-control"  placeholder="Actividad"> -->
-
-            <div class="col-auto my-1">
+            <div class="col-sm-3 my-1 form-group">
+                 <label for="costo" class="font-weight-bold">Precio</label>  
                 <div class="input-group-prepend">
                     <span class="input-group-text">$</span>
                     <input required="required" type="number" class="form-control" id="costo" placeholder="Costo">
                 </div>
             </div>
-          <div class="col-auto my-1">
+          <div id="button" class="col-auto my-1 form-group">
              <button type="submit" class="btn btn-primary">Guardar</button>
           </div>
         </div>
@@ -81,11 +91,11 @@
       <table class="table table-dark table-bordered">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Trabajdor/a</th>
-          <th scope="col">Actividad</th>
-          <th scope="col">Costo</th>
-          <th scope="col">Opciones</th>
+          <th class="text-center" scope="col">Fecha</th>
+          <th class="text-center" scope="col">Trabajdor/a</th>
+          <th class="text-center" scope="col">Actividad</th>
+          <th class="text-center" scope="col">Costo</th>
+          <th class="text-center" scope="col">Opciones</th>
         </tr>
       </thead>
       <tbody id="tablaprueba">
@@ -104,6 +114,7 @@
       </tbody>
     </table>
   </div>
+      
 
 
 
