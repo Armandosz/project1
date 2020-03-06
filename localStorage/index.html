@@ -2,73 +2,88 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="polo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
-  <title>Hello, world!</title>
+    <title>Hello, world!</title>
 
 </head>
 
 <body>
-  <div class="container mt-5 border border-primary rounded">
-
+<!--<body id="body" background="astronomy-background.jpg">-->
+ 
     <h3>
-      <!-- <i class="material-icons">
+        <!-- <i class="material-icons">
         accessibility
       </i> -->
         <img src="https://img.icons8.com/nolan/64/barbershop.png">
-      Estetica
+        Estetica
     </h3>
-
-    <form id="formulario">
-
-        <!-- Fila para los inputs -->
-        <div class="row">
-            <div class="col-sm-3 my-1 form-group">
-              <!--   <input required="required" type="text" class="form-control" id="nombre" placeholder="Nombre"> -->
-                <label for="nombre" class="font-weight-bold">Trabajador/a:</label> 
-                <select required="required" class="form-control custom-select" id="nombre">
-                  <option class="desactivado" selected disabled value="">Nombre...</option>
-                  <option value="eva">Eva</option>
-                  <option value="ady">Ady</option>
-                  <option value="nora">Nora</option>
-                  <option value="yessica">Yessica</option>
-                </select>
-            </div>
-            <div class="col-sm-4 my-1 form-group">
-                 <label for="actividad" class="font-weight-bold">Acividad</label>  
-                <select required="required" class="form-control custom-select" id="actividad">
-                  <option class="desactivado" selected disabled value="">Actividad...</option>
-                  <option value="corte">Corte</option>
-                  <option value="2">tintes</option>
-                  <option value="3">usasa</option>
-                </select>
-            </div>
-            <div class="col-sm-3 my-1 form-group">
-                 <label for="costo" class="font-weight-bold">Precio</label>  
-                <div class="input-group-prepend">
-                    <span class="input-group-text">$</span>
-                    <input required="required" type="number" class="form-control" id="costo" placeholder="Costo">
+    <div id="container" class="container mt-5 border border-primary rounded">
+        <h3>Agregar Actividad</h3>
+        <form id="formulario">
+            <!-- Fila para los inputs -->
+            <div class="row">
+                <div class="col-sm-3 my-1 form-group">
+                    <!--   <input required="required" type="text" class="form-control" id="nombre" placeholder="Nombre"> -->
+                    <label for="nombre" class="font-weight-bold">Trabajador/a:</label>
+                    <select required="required" class="form-control custom-select" id="nombre">
+                        <option class="desactivado" selected disabled value="">Nombre...</option>
+                        <option value="Ady">Ady</option>
+                        <option value="Eva">Eva</option>
+                        <option value="Nora">Nora</option>
+                        <option value="Yessica">Yessica</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 my-1 form-group">
+                    <label for="actividad" class="font-weight-bold">Acividad</label>
+                    <select required="required" class="form-control custom-select" id="actividad">
+                        <option class="desactivado" selected disabled value="">Actividad...</option>
+                        <option value="Corte">Corte</option>
+                        <option value="Depilacion">Depilación</option>
+                        <option value="Facial">Facial</option>
+                        <option value="Manicure">Manicure</option>
+                        <option value="Maquillaje">Maquillaje</option>
+                        <option value="Mechas">Mechas</option>
+                        <option value="Pedicure">Pedicure</option>
+                        <option value="Peinado">Peinado</option>
+                        <optgroup label="Pestañas">
+                            <option value="Pestañas Permanentes">Permanentes</option>
+                            <option value="Pestañas de grupo">De grupo</option>
+                            <option value="Pestañas Mink">Mink</option>
+                        </optgroup>
+                        <option value="Tinte">Tinte</option>
+                        <optgroup label="Uñas">
+                            <option value="Uñas Permanentes">Permanentes</option>
+                            <option value="Uñas Gelish">Gelish</option>
+                        </optgroup>
+                        <option value="Venta de Producto">Venta de Producto</option>
+                    </select>
+                </div>
+                <div class="col-sm-3 my-1 form-group">
+                    <label for="costo" class="font-weight-bold">Precio</label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        <input required="required" type="number" class="form-control" id="costo" placeholder="Costo">
+                    </div>
+                </div>
+                <div id="button" class="col-auto my-1 form-group">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
             </div>
-          <div id="button" class="col-auto my-1 form-group">
-             <button type="submit" class="btn btn-primary">Guardar</button>
-          </div>
-        </div>
-    </form>
-      
+        </form>
 
 
-<!--
+
+        <!--
     <div id="listaActividades" class="mt-4">
       <div class="alert alert-danger" role="alert">
         <i class="material-icons float-left mr-2">
@@ -86,20 +101,20 @@
       </div>
     </div>
       -->
-      
-      <div class="table-responsive">
-      <table class="table table-dark table-bordered">
-      <thead>
-        <tr>
-          <th class="text-center" scope="col">Fecha</th>
-          <th class="text-center" scope="col">Trabajdor/a</th>
-          <th class="text-center" scope="col">Actividad</th>
-          <th class="text-center" scope="col">Costo</th>
-          <th class="text-center" scope="col">Opciones</th>
-        </tr>
-      </thead>
-      <tbody id="tablaprueba">
-       <!-- <tr>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="text-center" scope="col">Fecha</th>
+                        <th class="text-center" scope="col">Trabajdor/a</th>
+                        <th class="text-center" scope="col">Actividad</th>
+                        <th class="text-center" scope="col">Costo</th>
+                        <th class="text-center" scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaprueba">
+                    <!-- <tr>
           <th scope="row">1</th>
           <td>Mark</td>
           <td>Otto</td>
@@ -111,24 +126,80 @@
           <td>Thornton</td>
           <td>300</td>
         </tr>-->
-      </tbody>
-    </table>
-  </div>
-      
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+        <!-- Segunda tabla -->
+        <div class="container mt-5 border border-primary rounded table-responsive">
+            <h3>Actividadedes Individuales</h3>
+            <form id="formularioInd">
+                <!-- Fila para los inputs -->
+                <div class="row">
+                    <div class="col-sm-3 my-1 form-group">
+                        <!--   <input required="required" type="text" class="form-control" id="nombre" placeholder="Nombre"> -->
+                        <label for="nombre" class="font-weight-bold">Trabajador/a:</label>
+                        <select required="required" class="form-control custom-select" id="nombreInd">
+                            <option class="desactivado" selected disabled value="">Nombre...</option>
+                            <option value="Eva">Eva</option>
+                            <option value="Ady">Ady</option>
+                            <option value="Nora">Nora</option>
+                            <option value="Yessica">Yessica</option>
+                        </select>
+                    </div>
+                    <div id="botonCostos" class="col-auto my-1 form-group">
+                        <button type="submit" class="btn btn-primary">calcuular</button>
+                    </div>
+                     <div id="botonCostos" class="col-auto my-1 form-group">
+                        <h3 id="resultadoInd"></h3>
+                    </div>
+                     <div id="botonCostos" class="col-auto my-1 form-group">
+                        <h3 id="resultadoTotal"></h3>
+                    </div>
+                    
+                </div>
+            </form>
+            
+            <div class="table-responsive">
+                <table class="table table-dark table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center" scope="col">Fecha</th>
+                            <th class="text-center" scope="col">Trabajdor/a</th>
+                            <th class="text-center" scope="col">Actividad</th>
+                            <th class="text-center" scope="col">Costo $</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ActIndividuales">
+                    <!-- <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>300</td>
+                    </tr>-->
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
 
 
 
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 
 </body>
 

@@ -1,5 +1,7 @@
 table {
     margin-top: 20px;
+
+
 }
 
 #edit-icon {
@@ -14,6 +16,18 @@ h3 {
    padding-top: 31px;
 }
 
+#botonCostos{
+    padding-top: 31px;
+}
+
+
 .desactivado {
     background-color: #D3D3D3;
 }
+
+#body {
+    width: 100%;
+    height: auto; 
+    background-size: cover;
+}
+
